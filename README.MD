@@ -9,3 +9,14 @@ The resources for CUD are below.</br>
 1. Adding User : path = /user/, Method=PUT<br />
 2. Updating User : path= /user/{id}, Method=POST<br />
 3. Deleting User : path= /user/{id}, Methos=DELETE<br />
+
+Sample User Request:<br />
+{
+	"fName":"John",
+	"lName": "Smith",
+	"email" : "joh@abc.com",
+	"pinCode": 1321321,
+	"birthDate": "02-MAR-1980"
+	
+}
+
