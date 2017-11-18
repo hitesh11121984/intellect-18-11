@@ -60,10 +60,8 @@ public class UserServiceImpl implements UserService {
 			userRepo.save(user);
 			return UserBeanMapper.MapEntityToResponse(user);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			return UserBeanMapper.MapInvalidDOBesponse(ErrorCodes.DOB_INVALID_CODE,"Date Format is wrong");
 		}
-		return null;
 	}
 	@Override
 	public UserBeanResponse deleteUser(String id) {
